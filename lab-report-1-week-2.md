@@ -6,14 +6,19 @@
 * Simply click on download to download the application or the dropdown depending on your operating sytem.
 * Then, run the installer and follow the instructions to fully install it on your computer.
 # Remotely Connecting (SSH)
+![Image](winSSH.png)
 ![Image](ssh.png)
+[Windows Ssh step](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)  
+[Course Account](https://sdacs.ucsd.edu/~icc/index.php)
+* You will first need to reset the password for your course account in the link above before anything else to enable your account in order to ssh.
+* If you are on Windows you will need to follow this tutorial which tells you to install two programs called open ssh client and server.
 * Next you will want to remotely connect to the server, a remote computer.
-* Enter the command ssh followed by your username and host.
-* The command is as follows: ssh (Your username)@(Hostname).
+* Enter the command ssh followed by (Your username)@(Hostname).
+* Notice that you may be prompted about authenticity when connecting for the first time and you should enter yes.
 # Running some commands
 ![Image](commands.png)
 * The next order of business is running commands or instructions for the computer.
-* As you can see in the image some starter commands include ls or list, cat or concatenate, and cd or change directory.
+* As you can see in the image some starter commands include ls or list, cat or concatenate, cd or change directory, and exit to logout.
 * Commands are ran by typing in the keyword sometimes followed by and argument separated by a space.
 # Moving files (scp)
 ![Image](scp.png)
