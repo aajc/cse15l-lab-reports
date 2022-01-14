@@ -3,7 +3,7 @@ I have changed this from Vscode.
 **This should be in bold**
 
 # Heading of this website
-[Link](https://aajc.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+[Link to the lab page](https://aajc.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 Link to google
 ![Image](http://url/a.png)
 > Quote of blocks
