@@ -14,3 +14,16 @@ Link to google
 Testing above this point:
 
 --- 
+
+`Inline code` with backticks is how you do this command
+
+
+* Item 1
+* Item 2
+* Item 3
+* Item 1
+* Item 2
+* Item 3
+* Item 1
+* Item 2
+* Item 3
