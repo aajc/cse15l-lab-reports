@@ -19,3 +19,10 @@
 ![Image](scp.png)
 1. If you want to move files from your computer, the client, to the server you can use the scp command or secure copy.
 2. The command is scp (localfile) (Your username)@(Hostname):(desired directory location).
+# SSH keys
+![Image](key.png)
+![Image](mkdir.png)
+![Image](sshkey.png)
+1. If you want to move files from your computer, the client, to the server you can use the scp command or secure copy.
+2. The command is scp (localfile) (Your username)@(Hostname):(desired directory location).
+
