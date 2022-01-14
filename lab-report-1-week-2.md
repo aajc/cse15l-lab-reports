@@ -1,3 +1,5 @@
+# Lab Report 1
+---
 # VScode Installation
 ![Image](vscode.png)
 ![Image](install.png)
