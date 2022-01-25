@@ -32,7 +32,11 @@
 * Commands are ran by typing in the keyword sometimes followed by an argument separated by a space.
 # Moving Files (scp)
 ![Image](scp.png)
-* If you want to move files from your computer, the client, to the server you can use the scp command or secure copy.
+* If you want to move files from your computer, the client, to the server you can use the 
+```
+scp
+```
+ command or secure copy.
 * If you do not have ssh keys you will need to enter your password for your course account.
 * The command is:
 ```
@@ -48,7 +52,11 @@ ssh-keygen
 ```
  command which will generate two files, one for the client and one for the server designated as public, server, and private, client.
 * Then you fill out the prompts and observe: where to store the public and private keys which are files (The overwrite prompt is there because I have already done this so it can be ignored), a passphrase for the keys, and then notice the information generated for your keys.
-* To complete the process you need to ssh into your account, make an ssh directory for the public key, and logout to your local computer to scp the public key onto the server which will complete the process as the private key is only needed by the client.
+* To complete the process you need to login to your account, make an ssh directory for the public key, and logout to your local computer to
+```
+ scp
+``` 
+  the public key onto the server which will complete the process as the private key is only needed by the client.
 # Becoming Efficient in the Remote Environment
 ![Image](mult.png)
 ![Image](exampleCommand.png)
@@ -67,9 +75,9 @@ ssh
 ``` 
 or 
 ```
-scp.
+scp
 ```
-* An implementation of this would be to make coding java on a server a lot easier by on the same line sshing into the server and as the argument in
+* An implementation of this would be to make coding java on a server a lot easier by on the same line logging into the server and as the argument in
 ```
  "" 
 ```
@@ -78,3 +86,4 @@ you put
 javac file; java file; cat file
 ```
  which would compile, run, and show the contents of the file in one command before returning to the local computer.
+ * This process would be 67 keystrokes.
