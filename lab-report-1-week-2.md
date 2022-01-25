@@ -11,7 +11,10 @@
 ![Image](winSSH.png)  
 
 ![Image](ssh.png)
-* You will first need to [reset the password for your course account](https://sdacs.ucsd.edu/~icc/index.php) in the link above before anything else to enable your account in order to ssh.
+* You will first need to [reset the password for your course account](https://sdacs.ucsd.edu/~icc/index.php) in the link above before anything else to enable your account in order to 
+```
+ssh
+```
 * If you are on Windows you will need to follow [this tutorial](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) which tells you to install two programs called open ssh client and server.
 * Next you will want to remotely connect to the server, a remote computer.
 * Enter the command:
