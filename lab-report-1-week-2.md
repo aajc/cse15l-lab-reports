@@ -57,7 +57,7 @@ the public key onto the server which will complete the process as the private ke
 * There are a myriad of tricks to optimize your remote running but a good start is using some basic ideas.
 * These tricks include seperating commands with a
 semicolon on one line to do multiple commands in one go, you can couple this with attaching arguments to the secure shell command, using keyboard shortcuts such as tab to finish arguments for you, and having an ssh key so you do not need to enter your password everytime you secure shell or secure copy.
-* An implementation of this would be to make coding java on a server a lot easier by on the same line by logging into the server, compiling, running, and showing the contents of the file in one command before returning to the local computer.
+* An implementation of this would be to make coding java on a server a lot easier by on the same line logging into the server, compiling, running, and showing the contents of the file in one command before returning to the local computer.
 This command would be:
 ```
 ssh cs15lwi22avj@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI; cat WhereAmI.java"
