@@ -11,10 +11,7 @@
 ![Image](winSSH.png)  
 
 ![Image](ssh.png)
-* You will first need to [reset the password for your course account](https://sdacs.ucsd.edu/~icc/index.php) in the link above before anything else to enable your account in order to 
-```
-ssh
-```
+* You will first need to [reset the password for your course account](https://sdacs.ucsd.edu/~icc/index.php) in the link above before anything else to enable your account in order to secure shell.
 * If you are on Windows you will need to follow [this tutorial](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) which tells you to install two programs called open ssh client and server.
 * Next you will want to remotely connect to the server, a remote computer.
 * Enter the command:
@@ -35,12 +32,9 @@ ssh
 * Commands are ran by typing in the keyword sometimes followed by an argument separated by a space.
 # Moving Files (scp)
 ![Image](scp.png)
-* If you want to move files from your computer, the client, to the server you can use the 
-```
-scp
-```
- command or secure copy.
-* If you do not have ssh keys you will need to enter your password for your course account.
+* If you want to move files from your computer, the client, to the server you can use the secure copy
+command.
+* If you do not have secure shell keys you will need to enter your password for your course account.
 * The command is:
 ```
  scp (local file) (Your username)@(Hostname):(desired directory location)
@@ -55,38 +49,17 @@ ssh-keygen
 ```
  command which will generate two files, one for the client and one for the server designated as public, server, and private, client.
 * Then you fill out the prompts and observe: where to store the public and private keys which are files (The overwrite prompt is there because I have already done this so it can be ignored), a passphrase for the keys, and then notice the information generated for your keys.
-* To complete the process you need to login to your account, make an ssh directory for the public key, and logout to your local computer to
-```
- scp
-``` 
-  the public key onto the server which will complete the process as the private key is only needed by the client.
+* To complete the process you need to login to your account, make an secure shell directory for the public key, and logout to your local computer to secure copy
+the public key onto the server which will complete the process as the private key is only needed by the client.
 # Becoming Efficient in the Remote Environment
 ![Image](mult.png)
 ![Image](exampleCommand.png)
 * There are a myriad of tricks to optimize your remote running but a good start is using some basic ideas.
 * These tricks include seperating commands with a
+semicolon on one line to do multiple commands in one go, you can couple this with attaching arguments to the secure shell command, using keyboard shortcuts such as tab to finish arguments for you, and having an ssh key so you do not need to enter your password everytime you secure shell or secure copy.
+* An implementation of this would be to make coding java on a server a lot easier by on the same line by logging into the server, compiling, running, and showing the contents of the file in one command before returning to the local computer.
+This command would be:
 ```
- ; 
- ```
-on one line to do multiple commands in one go, you can couple this with attaching arguments to the
+ssh cs15lwi22avj@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI; cat WhereAmI.java"
 ```
-ssh
-```
- command, using keyboard shortcuts such as tab to finish arguments for you, and having an ssh key so you do not need to enter your password everytime you
-```
-ssh
-``` 
-or 
-```
-scp
-```
-* An implementation of this would be to make coding java on a server a lot easier by on the same line logging into the server and as the argument in
-```
- "" 
-```
-you put
-```
-javac file; java file; cat file
-```
- which would compile, run, and show the contents of the file in one command before returning to the local computer.
- * This process would be 67 keystrokes.
+ * This process would be 87 keystrokes.
