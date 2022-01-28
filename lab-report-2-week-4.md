@@ -1,4 +1,4 @@
-# Fixing a Bug
+# Lab Report 2
 ## Code Change 1
 ![Image](pictures/code1.PNG)
 
