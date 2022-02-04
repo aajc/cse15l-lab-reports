@@ -11,7 +11,7 @@ The bug is that the program does not account for markdown files without parenthe
 
 [Test file with failure-inducing input](https://github.com/aajc/markdown-parse/blob/main/test-file6.md)
 
-The bug is the get method in the tester file, and the symptom is an out of bounds exception. The failure inducing input is a markdown file that should output an empty ArrayList. The relationship between these three entities is that the get method bug causes the symptom of an exception and this clearly shows the bug. The failure inducing input on the other hand is a legitimate file yet it exposes the bug for the programmer to find as it covers an edge case.
+The bug is that an image in markdown is mistaken for a link, and the symptom is returning the insides of the image as if it was a link. The failure inducing input is a markdown file that should output an empty ArrayList and has the syntax for an image. The relationship between these three entities is that the symptom of a non-empty arraylist shows the bug of not being able to discern between a link and an image and the failure-inducing input is a normal file that makes the bug come out which makes the symptom come out.
 
 ## Code Change 3
 ![Image](pictures/code3.png)
