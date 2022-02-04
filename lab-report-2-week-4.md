@@ -9,7 +9,7 @@ The bug is that the program does not account for markdown files without parenthe
 ## Code Change 2
 ![Image](pictures/2ndChange.png)
 
-[Test file with failure-inducing input](https://github.com/aajc/markdown-parse/blob/main/new3.md)
+[Test file with failure-inducing input](https://github.com/aajc/markdown-parse/blob/main/test-file6.md)
 
 The bug is the get method in the tester file, and the symptom is an out of bounds exception. The failure inducing input is a markdown file that should output an empty ArrayList. The relationship between these three entities is that the get method bug causes the symptom of an exception and this clearly shows the bug. The failure inducing input on the other hand is a legitimate file yet it exposes the bug for the programmer to find as it covers an edge case.
 
