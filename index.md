@@ -7,6 +7,8 @@ I have changed this from Vscode.
 
 [Link to the 2nd lab page](https://aajc.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
 
+[Link to the 3rd lab page](https://aajc.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
+
 Link to google
 
 ![Image](http://url/a.png)
