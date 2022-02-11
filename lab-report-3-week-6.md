@@ -1,5 +1,5 @@
 # Lab Report 3
-# Streamlining secure shell Configuration
+# Streamlining Secure Shell Configuration
 ## Configuration file with editor
 ![Image](pictures/lab3img1.png)
 
