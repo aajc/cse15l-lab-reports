@@ -11,6 +11,8 @@ I have changed this from Vscode.
 
 [Link to the 4th lab page](https://aajc.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
 
+[Link to the 5th lab page](https://aajc.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
+
 Link to google
 
 ![Image](http://url/a.png)
