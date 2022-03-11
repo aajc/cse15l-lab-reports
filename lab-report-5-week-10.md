@@ -7,6 +7,7 @@ I found the tests with different results by using the diff command. More specifi
 Neither implementation is correct
 
 Other output(top) vs My output(bottom):
+
 ![Image](pictures/lab5img1.png)
 
 Expected Output:
@@ -21,6 +22,7 @@ Code that should be fixed:
 The provided implementation is correct and my implementation is not correct.
 
 Other output(top) vs My output(bottom):
+
 ![Image](pictures/lab5img4.png)
 
 Expected Output:
