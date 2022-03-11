@@ -26,5 +26,8 @@ Other output(top) vs My output(bottom):
 Expected Output:
 [foo(and(bar))]
 
-My implementation is not correct so the bug in my program is 
+The bug in my program is that it is only checking for the first found parenthesis and not continuing on to make sure there are not more than 1 closing parenthesis in the parenthesis for the markdown link. 
+
+Code to be fixed:
+![Image](pictures/lab5img5.png)
 
