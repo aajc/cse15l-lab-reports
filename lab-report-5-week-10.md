@@ -1,24 +1,30 @@
 # Lab Report 5
-# Streamlining Secure Shell Configuration
-## Configuration file with editor
-![Image](pictures/lab3img1.png)
+## How I Found the Tests With Different Results
 
-This is the `config` file that is in the secure shell folder. In order to create the `config` file I copied one of the existing files and then renamed it to `config` in addition to giving it the new contents of host and user names to designate what the host name represents, ieng6 in this case. I had to change the username to match my own which was avj.
+I found the tests with different results by using the diff command. More specifically, I redirected the output of a bash file called script.sh. It had a for loop for all 652 markdown files that ran the markdown parse program on every single file and then echoed the file name. The output of the bash file script was outputted to a file called results.txt and I did the same process for my repositories implementation of the markdown parse program. I then used the diff command with these two files which had the output of the bash scripts with their respective markdownparse programs which gave me a list of differences which I examined to find the two different tests I have here.
 
-## Logging into account with chosen alias
-![Image](pictures/lab3img2.png)
+## Test 1
+Neither implementation is correct
 
-I chose the alias 15l so in the `config` file next to the word Host I changed the alias to be 15l. I then only needed to use the command
-```
-ssh 15l
-```
-to login to my ieng6 account. This is possible because the `config` file provides the necessary information for the host name.
+Other output(top) vs My output(bottom):
+![Image](pictures/lab5img1.png)
 
-## Secure copying into account with chosen alias
-![Image](pictures/lab3img3.png)
+Expected Output:
+[ti*tle]
 
-I was able to use my alias for the ieng6 server to secure copy in addition to secure shelling. All I needed to do was the command
-```
-scp copy.txt 15l:~
-```
-in order to secure copy to ieng6 rather than using my username attached to the server. Once again, the `config` file is involved in the process and allows for this to happen.
+For the provided implementation of markdownparse the bug is that the program is not checking if there are quotes in the parentheses part of a markdown link. What is wrong with this program is that it needs to be checking for quotes in the parentheses portition of the markdown link and then to only use what is inside of the quotes as the link.
+
+Code that should be fixed:
+![Image](pictures/lab5img3.png)
+
+## Test 2
+The provided implementation is correct and my implementation is not correct.
+
+Other output(top) vs My output(bottom):
+![Image](pictures/lab5img4.png)
+
+Expected Output:
+[foo(and(bar))]
+
+My implementation is not correct so the bug in my program is 
+
